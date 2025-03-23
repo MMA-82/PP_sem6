@@ -6,6 +6,8 @@
 Программа получает на вход восемь пар чисел, каждое число от 1 до 8 - координаты 8 ферзей. 
 Если ферзи не бьют друг друга верните истину, а если бьют - ложь.
 """
+import random
+from .sem6_dz2 import generate_positions
 
 
 def valid_ferz(pos):
@@ -20,3 +22,7 @@ def valid_ferz(pos):
                     pos[i] + i == pos[j] + j:
                 return False
     return True
+
+
+if __name__ == "__main__":
+    print(valid_ferz((generate_positions())))
