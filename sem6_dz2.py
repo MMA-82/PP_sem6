@@ -7,7 +7,7 @@
 Если ферзи не бьют друг друга верните истину, а если бьют - ложь.
 """
 import random
-from .sem6_dz2 import generate_positions
+from .sem6_dz3 import generate_positions
 
 
 def valid_ferz(pos):
